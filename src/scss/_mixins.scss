@@ -1,0 +1,17 @@
+@mixin span-accent-bg($left: -1.6%) {
+    span {
+        position: relative;
+        z-index: 99;
+    }
+
+    span::after {
+        content: "";
+        width: 103%;
+        height: 23px;
+        background-color: $accent-color-dark;
+        position: absolute;
+        left: $left;
+        top: 35px;
+        z-index: -1;
+    }
+}

@@ -1,0 +1,38 @@
+.works {
+    padding: 65px 0 75px 0;
+    background-color: $bg-secondary-dark;
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h2 {
+            margin-bottom: 55px;
+        }
+
+        p {
+            width: 482px;
+            font-size: 24px;
+            line-height: 30px;
+            text-align: center;
+            color: $text-secondary-dark;
+            margin-bottom: 75px;
+        }
+
+        .works__items {
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(3, 300px);
+            grid-template-rows: repeat(2, 345px);
+            justify-content: center;
+            gap: 75px;
+
+            .works__item {
+                background-color: $elements-bg-dark;
+                border-radius: 30px;
+                overflow: hidden;
+            }
+        }
+    }
+}

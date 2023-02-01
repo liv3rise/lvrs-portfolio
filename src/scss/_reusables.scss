@@ -1,0 +1,9 @@
+.section-title {
+    font-weight: 600;
+    font-size: 48px;
+    text-transform: uppercase;
+    text-align: center;
+    color: $text-primary-dark;
+
+    @include span-accent-bg;
+}
