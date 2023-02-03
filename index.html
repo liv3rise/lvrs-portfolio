@@ -43,24 +43,24 @@
 
 <body>
   <section class="main">
-    <div class="container">
+    <div class="main__container container">
       <div class="main__content">
-        <h1>Hey! I'm <span>liv3rise</span>, front-end developer based in Ukraine</h1>
-        <p>
+        <h1 class="main__title">Hey! I'm <span>liv3rise</span>, front-end developer based in Ukraine</h1>
+        <p class="main__text text">
           I started learning programming in 2019
           and after trying many languages ​​and technologies I fell in love with web development. Right now I'm focused
           on
           improving my front-end skills and have some back-end experience, but I'm constantly improving myself and will
           eventually be good at both. 💪
         </p>
-        <p>
+        <p class="main__text text">
           I will be glad to cooperate with you and take part in the development of your projects! Contact me if you have
           a
           suggestion or just want to ask a question.
         </p>
         <div class="main__buttons">
-          <button><img src="src/img/icons/envelope-icon.webp" alt="envelope icon"> contact</button>
-          <button><img src="src/img/icons/dots-icon.webp" alt="dots icon"> my works</button>
+          <button class="main__button"><img src="src/img/icons/envelope-icon.webp" alt="envelope icon"> contact</button>
+          <button class="main__button"><img src="src/img/icons/dots-icon.webp" alt="dots icon"> my works</button>
         </div>
       </div>
       <div class="main__emoji">
@@ -70,52 +70,77 @@
   </section>
 
   <section class="works">
-    <div class="container">
-      <h2 class="section-title"><span>my works</span></h2>
-      <p>List of projects I have worked on for my clients, as well as my own.</p>
+    <div class="works__container container">
+      <h2 class="works__title section-title"><span>my works</span></h2>
+      <p class="works__text text">List of projects I have worked on for my clients, as well as my own.</p>
 
       <div class="works__items">
         <div class="works__item">
-          <img src="src/img/other/project-placeholder.webp" alt="project placeholder image">
-          <div>
-            <p>coming soon</p>
-            <img src="src/img/emoji/emoji-in-clouds.webp" alt="emoji in clouds">
+          <img class="works__item-img" src="src/img/other/project-placeholder.webp" alt="project placeholder image">
+          <div class="works__item-overlay">
+            <p class="works__item-text">coming<br>soon</p>
+            <img class="works__item-emoji" class="emoji" src="src/img/emoji/emoji-in-clouds.webp" alt="emoji in clouds">
           </div>
         </div>
         <div class="works__item">
-          <img src="src/img/other/project-placeholder.webp" alt="project placeholder image">
-          <div>
-            <p>coming soon</p>
-            <img src="src/img/emoji/emoji-in-clouds.webp" alt="emoji in clouds">
+          <img class="works__item-img" src="src/img/other/project-placeholder.webp" alt="project placeholder image">
+          <div class="works__item-overlay">
+            <p class="works__item-text">coming<br>soon</p>
+            <img class="works__item-emoji" class="emoji" src="src/img/emoji/emoji-in-clouds.webp" alt="emoji in clouds">
           </div>
         </div>
         <div class="works__item">
-          <img src="src/img/other/project-placeholder.webp" alt="project placeholder image">
-          <div>
-            <p>coming soon</p>
-            <img src="src/img/emoji/emoji-in-clouds.webp" alt="emoji in clouds">
+          <img class="works__item-img" src="src/img/other/project-placeholder.webp" alt="project placeholder image">
+          <div class="works__item-overlay">
+            <p class="works__item-text">coming<br>soon</p>
+            <img class="works__item-emoji" class="emoji" src="src/img/emoji/emoji-in-clouds.webp" alt="emoji in clouds">
           </div>
         </div>
         <div class="works__item">
-          <img src="src/img/other/project-placeholder.webp" alt="project placeholder image">
-          <div>
-            <p>coming soon</p>
-            <img src="src/img/emoji/emoji-in-clouds.webp" alt="emoji in clouds">
+          <img class="works__item-img" src="src/img/other/project-placeholder.webp" alt="project placeholder image">
+          <div class="works__item-overlay">
+            <p class="works__item-text">coming<br>soon</p>
+            <img class="works__item-emoji" class="emoji" src="src/img/emoji/emoji-in-clouds.webp" alt="emoji in clouds">
           </div>
         </div>
         <div class="works__item">
-          <img src="src/img/other/project-placeholder.webp" alt="project placeholder image">
-          <div>
-            <p>coming soon</p>
-            <img src="src/img/emoji/emoji-in-clouds.webp" alt="emoji in clouds">
+          <img class="works__item-img" src="src/img/other/project-placeholder.webp" alt="project placeholder image">
+          <div class="works__item-overlay">
+            <p class="works__item-text">coming<br>soon</p>
+            <img class="works__item-emoji" class="emoji" src="src/img/emoji/emoji-in-clouds.webp" alt="emoji in clouds">
           </div>
         </div>
         <div class="works__item">
-          <img src="src/img/other/project-placeholder.webp" alt="project placeholder image">
-          <div>
-            <p>coming soon</p>
-            <img src="src/img/emoji/emoji-in-clouds.webp" alt="emoji in clouds">
+          <img class="works__item-img" src="src/img/other/project-placeholder.webp" alt="project placeholder image">
+          <div class="works__item-overlay">
+            <p class="works__item-text">coming<br>soon</p>
+            <img class="works__item-emoji" class="emoji" src="src/img/emoji/emoji-in-clouds.webp" alt="emoji in clouds">
           </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact">
+    <div class="contact__container container">
+      <h2 class="contact__title section-title"><span>Contact with me</span></h2>
+      <div class="contact__grid">
+        <img class="contact__emoji" src="src/img/emoji/emoji-mailbox.webp" alt="mailbox emoji">
+        <div class="contact__content">
+          <p class="contact__text text">You can contact me on the following resources...</p>
+          <div class="contact__links">
+            <a class="contact__link" href="#"><img src="src/img/icons/telegram-icon.webp" alt=""></a>
+            <a class="contact__link" href="#"><img src="src/img/icons/discord-icon.webp" alt=""></a>
+            <a class="contact__link" href="#"><img src="src/img/icons/github-icon.webp" alt=""></a>
+          </div>
+          <p class="contact__text text">Or, if you'd prefer to be contacted by E-Mail, you can do so here. Feel free to
+            contact me for any topic or question through this form. I will answer you as quickly as I can.</p>
+          <form action="" class="contact__form">
+            <input type="text" placeholder="Your E-Mail" class="contact__input">
+            // TODO done textarea and contact section
+            <textarea placeholder="Your message" name="" id="" cols="30" rows="15" class="contact__textarea"></textarea>
+            <button class="contact__submit">Submit</button>
+          </form>
         </div>
       </div>
     </div>

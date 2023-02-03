@@ -7,3 +7,9 @@
 
     @include span-accent-bg;
 }
+
+.text {
+    font-size: 24px;
+    line-height: 30px;
+    color: $text-secondary-dark;
+}

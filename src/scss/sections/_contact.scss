@@ -1,0 +1,65 @@
+.contact {
+    padding: 90px 0;
+
+    &__title {
+        margin-bottom: 84px;
+    }
+
+    &__grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, 520px);
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    &__links {
+        display: flex;
+        gap: 23px;
+    }
+
+    &__link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 89px;
+        height: 89px;
+        background-color: $elements-bg-dark;
+        border-radius: 20px;
+        transition: 0.3s;
+
+        &:hover {
+            background-color: lighten($elements-bg-dark, 8%);
+        }
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    &__input[type="text"], &__textarea {
+        background-color: $elements-bg-dark;
+        color: lighten($elements-bg-dark, 15%);
+        border-radius: 30px;
+        border: none;
+        font-size: 20px;
+        padding: 16px 30px;
+        transition: 0.3s;
+        resize: none;
+        overflow: hidden;
+
+        &::placeholder {
+            color: lighten($elements-bg-dark, 10%);
+        }
+
+        &:focus {
+            outline: none;
+            box-shadow: 0 0 2px 2px lighten($elements-bg-dark, 10%);
+        }
+    }
+}
