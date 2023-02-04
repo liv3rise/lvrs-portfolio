@@ -1,5 +1,5 @@
 .contact {
-    padding: 90px 0;
+    padding: 90px 20px;
 
     &__title {
         margin-bottom: 84px;
@@ -8,6 +8,10 @@
     &__grid {
         display: grid;
         grid-template-columns: repeat(auto-fill, 520px);
+        align-items: center;
+        justify-items: center;
+        justify-content: center;
+        gap: 30px;
     }
 
     &__content {
@@ -42,24 +46,46 @@
         gap: 30px;
     }
 
-    &__input[type="text"], &__textarea {
+    &__input[type="text"],
+    &__textarea {
         background-color: $elements-bg-dark;
-        color: lighten($elements-bg-dark, 15%);
+        color: lighten($elements-bg-dark, 18%);
         border-radius: 30px;
         border: none;
         font-size: 20px;
         padding: 16px 30px;
         transition: 0.3s;
-        resize: none;
-        overflow: hidden;
 
         &::placeholder {
-            color: lighten($elements-bg-dark, 10%);
+            color: lighten($elements-bg-dark, 15%);
         }
 
         &:focus {
             outline: none;
             box-shadow: 0 0 2px 2px lighten($elements-bg-dark, 10%);
+        }
+    }
+
+    &__textarea {
+        resize: none;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+    }
+
+    &__submit {
+        padding: 10px;
+        background-color: $accent-color-dark;
+        color: darken($text-secondary-dark, 5%);
+        font-size: 24px;
+        border-radius: 30px;
+        border: none;
+        cursor: pointer;
+        transition: 0.3s;
+
+        &:hover {
+            background-color: darken($accent-color-dark, 3%);
         }
     }
 }
