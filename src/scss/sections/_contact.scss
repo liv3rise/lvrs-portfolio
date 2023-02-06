@@ -18,25 +18,31 @@
         display: flex;
         flex-direction: column;
         gap: 30px;
+        max-width: 100%;
     }
 
     &__links {
         display: flex;
         gap: 23px;
+        flex-wrap: wrap;
     }
 
     &__link {
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 89px;
-        height: 89px;
+        width: 59px;
+        height: 59px;
         background-color: $elements-bg-dark;
         border-radius: 20px;
         transition: 0.3s;
 
         &:hover {
             background-color: lighten($elements-bg-dark, 8%);
+        }
+
+        img {
+            width: 60%;
         }
     }
 

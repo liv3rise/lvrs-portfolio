@@ -1,5 +1,6 @@
-@mixin span-accent-bg($left: -1.6%) {
+@mixin span-accent-bg($left: -1.6%, $accent-color: $accent-color-dark) {
     span {
+        display: inline-block;
         position: relative;
         z-index: 99;
     }
@@ -7,11 +8,11 @@
     span::after {
         content: "";
         width: 103%;
-        height: 23px;
-        background-color: $accent-color-dark;
+        height: 50%;
+        background-color: $accent-color;
         position: absolute;
         left: $left;
-        top: 27px;
+        top: 50%;
         z-index: -1;
     }
 }

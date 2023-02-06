@@ -1,0 +1,38 @@
+.theme-light {
+    body {
+        background-color: $bg-primary-light;
+    }
+
+    .section-title {
+        color: $text-primary-light;
+
+        @include span-accent-bg($accent-color: $accent-color-light)
+    }
+
+    .text {
+        color: $text-secondary-light;
+    }
+
+    .works {
+        background-color: $bg-secondary-light;
+    }
+
+    .main__button {
+        background-color: $accent-color-light;
+        border-color: $accent-color-light;
+
+        &:last-of-type {
+            background-color: transparent;
+            color: black;
+
+            img {
+                filter: invert(85%);
+            }
+        }
+
+        &:hover {
+            background-color: darken($accent-color-light, 8%);
+            border-color: darken($accent-color-light, 8%);
+        }
+    }
+}

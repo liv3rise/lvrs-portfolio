@@ -3,7 +3,7 @@
 
     &__container {
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(100px, 550px));
+        grid-template-columns: repeat(auto-fill, minmax(100px, 480px));
         justify-items: center;
         align-items: center;
         justify-content: center;
@@ -38,7 +38,7 @@
         display: flex;
         justify-content: center;
         gap: 14px;
-        width: 250px;
+        width: 220px;
         height: 70px;
         font-size: $button-text-size;
         line-height: 18px;
