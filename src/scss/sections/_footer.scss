@@ -1,0 +1,19 @@
+.footer {
+    padding: 57px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: $bg-secondary-dark;
+
+    &__text {
+        color: darken($text-primary-dark, 30%);
+        font-size: $text-size + 2px;
+    }
+    
+    &__copyright {
+        color: darken($text-primary-dark, 40%);
+        font-size: $text-size + 2px;
+    }
+}

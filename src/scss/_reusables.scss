@@ -1,6 +1,6 @@
 .section-title {
     font-weight: 600;
-    font-size: 48px;
+    font-size: $title-size;
     text-transform: uppercase;
     text-align: center;
     color: $text-primary-dark;
@@ -9,7 +9,7 @@
 }
 
 .text {
-    font-size: 24px;
+    font-size: $text-size;
     line-height: 30px;
     color: $text-secondary-dark;
 }
