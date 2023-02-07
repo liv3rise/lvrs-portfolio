@@ -20,7 +20,7 @@
         text-align: left;
         text-transform: none;
 
-        @include span-accent-bg(-2px);
+        @include span-accent-bg(-1px);
     }
 
     &__text {

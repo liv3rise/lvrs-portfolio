@@ -3,36 +3,98 @@
         background-color: $bg-primary-light;
     }
 
+    ::-webkit-scrollbar-track {
+        background: $elements-bg-light;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: darken($elements-bg-light, 10%);
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+        background: darken($elements-bg-light, 15%);
+    }
+
     .section-title {
         color: $text-primary-light;
 
-        @include span-accent-bg($accent-color: $accent-color-light)
+        @include span-accent-bg(-1.8%, $accent-color-light)
     }
 
     .text {
         color: $text-secondary-light;
     }
 
-    .works {
-        background-color: $bg-secondary-light;
+    .main {
+        &__title {
+            @include span-accent-bg(-1px, $accent-color-light);
+        }
+
+        &__button {
+            background-color: $accent-color-light;
+            border-color: $accent-color-light;
+
+            &:last-of-type {
+                background-color: transparent;
+                color: black;
+
+                img {
+                    filter: invert(85%);
+                }
+            }
+
+            &:hover {
+                background-color: darken($accent-color-light, 8%);
+                border-color: darken($accent-color-light, 8%);
+            }
+        }
     }
 
-    .main__button {
-        background-color: $accent-color-light;
-        border-color: $accent-color-light;
+    .works {
+        background-color: $bg-secondary-light;
 
-        &:last-of-type {
-            background-color: transparent;
-            color: black;
+        &__item-overlay {
+            background: rgb(197 197 197 / 86%);
+        }
 
-            img {
-                filter: invert(85%);
+        &__item-text {
+            color: $text-secondary-light;
+        }
+    }
+
+    .contact {
+        &__link {
+            background-color: $elements-bg-light;
+
+            &:hover {
+                background-color: darken($elements-bg-light, 15%);
             }
         }
 
-        &:hover {
-            background-color: darken($accent-color-light, 8%);
-            border-color: darken($accent-color-light, 8%);
+        &__input[type="text"],
+        &__textarea {
+            background-color: $elements-bg-light;
+        }
+
+        &__submit {
+            background-color: $accent-color-light;
+            color: $text-secondary-light;
+    
+            &:hover {
+                background-color: darken($accent-color-light, 3%);
+            }
+        }
+    }
+
+    .footer {
+        background-color: darken($bg-secondary-light, 10%);
+
+        &__text {
+            color: lighten($text-secondary-light, 5%);
+        }
+
+        &__copyright {
+            color: lighten($text-secondary-light, 15%);
         }
     }
 }

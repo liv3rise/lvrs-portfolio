@@ -5,7 +5,7 @@
     text-align: center;
     color: $text-primary-dark;
 
-    @include span-accent-bg;
+    @include span-accent-bg(-1.8%, $accent-color-dark);
 }
 
 .text {
