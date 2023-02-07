@@ -1,0 +1,29 @@
+.header {
+    padding: 0px 20px;
+    position: fixed;
+    width: 100%;
+    // backdrop-filter: blur(3.5px);
+    // -webkit-backdrop-filter: blur(3.5px);
+    z-index: 100;
+
+    &__container {
+        height: 68px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    &__theme-switcher {
+        background: url(src/img/icons/sun.webp) center center / 60% no-repeat;
+        background-color: $elements-bg-dark;
+        border-radius: 10px;
+        width: 34px;
+        height: 34px;
+        cursor: pointer;
+        transition: 0.3s;
+
+        &:hover {
+            background-color: lighten($elements-bg-dark, 10%);
+        }
+    }
+}

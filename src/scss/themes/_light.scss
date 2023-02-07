@@ -15,6 +15,15 @@
         background: darken($elements-bg-light, 15%);
     }
 
+    .header__theme-switcher {
+        background: url(src/img/icons/moon.webp) center center / 60% no-repeat;
+        background-color: $elements-bg-light;
+
+        &:hover {
+            background-color: darken($elements-bg-light, 15%);
+        }
+    }
+
     .section-title {
         color: $text-primary-light;
 
