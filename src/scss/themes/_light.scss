@@ -50,10 +50,10 @@
 
             &:last-of-type {
                 background-color: transparent;
-                color: black;
+                color: $text-secondary-light;
 
                 img {
-                    filter: invert(85%);
+                    filter: invert(75%);
                 }
             }
 
@@ -68,7 +68,7 @@
         background-color: $bg-secondary-light;
 
         &__item-overlay {
-            background: rgba(197, 197, 197, 0.651);
+            background: rgba($bg-primary-light, 0.651);
         }
 
         &__item-text {

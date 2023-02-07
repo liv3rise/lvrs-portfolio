@@ -51,7 +51,7 @@
         top: 0;
         left: 0;
         position: absolute;
-        background: rgba(22, 22, 22, 0.863);
+        background: rgba($bg-primary-dark, 0.863);
         backdrop-filter: blur(5.5px);
         -webkit-backdrop-filter: blur(5.5px);
     }
