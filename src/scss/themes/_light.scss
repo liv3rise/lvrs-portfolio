@@ -15,12 +15,17 @@
         background: darken($elements-bg-light, 15%);
     }
 
-    .header__theme-switcher {
-        background: url(src/img/icons/moon.webp) center center / 60% no-repeat;
-        background-color: $elements-bg-light;
+    .header {
+        &__button {
+            background-color: $elements-bg-light;
 
-        &:hover {
-            background-color: darken($elements-bg-light, 15%);
+            &:hover {
+                background-color: darken($elements-bg-light, 15%);
+            }
+        }
+
+        &__switcher {
+            background-image: url(/src/img/icons/moon.webp);
         }
     }
 
@@ -63,7 +68,7 @@
         background-color: $bg-secondary-light;
 
         &__item-overlay {
-            background: rgb(197 197 197 / 86%);
+            background: rgba(197, 197, 197, 0.651);
         }
 
         &__item-text {
@@ -88,7 +93,7 @@
         &__submit {
             background-color: $accent-color-light;
             color: $text-secondary-light;
-    
+
             &:hover {
                 background-color: darken($accent-color-light, 3%);
             }

@@ -1,5 +1,5 @@
 .main {
-    padding: 90px 20px 90px 20px;
+    padding: 68px 20px 90px 20px;
 
     &__container {
         display: grid;
@@ -46,6 +46,7 @@
         border-radius: 100px;
         border: 5px solid $accent-color-dark;
         color: darken($text-primary-dark, 10%);
+        text-decoration: none;
         transition: 0.3s;
         cursor: pointer;
 

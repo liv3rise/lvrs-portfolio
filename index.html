@@ -45,11 +45,14 @@
 <body>
   <header class="header">
     <div class="header__container container">
-      <div class="header__theme-switcher" id="themeSwitcher"></div>
+      <div class="header__buttons">
+        <a href="#main" class="header__button header__up" id="upButton"></a>
+        <div class="header__button header__switcher" id="themeSwitcher"></div>
+      </div>
     </div>
   </header>
 
-  <section class="main">
+  <section class="main" id="main">
     <div class="main__container container">
       <div class="main__content">
         <h1 class="section-title main__title">Hey! I'm <span>liv3rise</span>, front-end developer based in Ukraine</h1>
@@ -66,8 +69,9 @@
           suggestion or just want to ask a question.
         </p>
         <div class="main__buttons">
-          <button class="main__button"><img src="src/img/icons/envelope-icon.webp" alt="envelope icon"> contact</button>
-          <button class="main__button"><img src="src/img/icons/dots-icon.webp" alt="dots icon"> my works</button>
+          <a href="#contact" class="main__button"><img src="src/img/icons/envelope-icon.webp" alt="envelope icon">
+            contact</a>
+          <a href="#works" class="main__button"><img src="src/img/icons/dots-icon.webp" alt="dots icon"> my works</a>
         </div>
       </div>
       <div class="main__emoji">
@@ -79,7 +83,7 @@
   <section class="works">
     <div class="works__container container">
       <h2 class="works__title section-title"><span>my works</span></h2>
-      <p class="works__text text">List of projects I have worked on for my clients, as well as my own.</p>
+      <p class="works__text text" id="works">List of projects I have worked on for my clients, as well as my own.</p>
 
       <div class="works__items">
         <div class="works__item">
@@ -127,7 +131,7 @@
       <h2 class="contact__title section-title"><span>Contact with me</span></h2>
       <div class="contact__grid">
         <img class="contact__emoji" src="src/img/emoji/emoji-mailbox.webp" alt="mailbox emoji">
-        <div class="contact__content">
+        <div class="contact__content" id="contact">
           <p class="contact__text text">You can contact me on the following resources...</p>
           <div class="contact__links">
             <a class="contact__link" href="#"><img src="src/img/icons/telegram-icon.webp" alt=""></a>
@@ -138,7 +142,8 @@
             contact me for any topic or question through this form. I will answer you as quickly as I can.</p>
           <form action="" class="contact__form">
             <input type="text" name="email" placeholder="Your E-Mail" class="contact__input">
-            <textarea rows="5" name="message" placeholder="Your message" id="messageInput" class="contact__textarea"></textarea>
+            <textarea rows="5" name="message" placeholder="Your message" id="messageInput"
+              class="contact__textarea"></textarea>
             <button class="contact__submit">submit</button>
           </form>
         </div>
@@ -150,6 +155,7 @@
     <div class="footer__text">That's all for now ¯\_(ツ)_/¯ </div>
     <div class="footer__copyright">©2023 liv3rise</div>
   </footer>
+
   <script type="module" src="src/js/index.js"></script>
 </body>
 

@@ -2,9 +2,14 @@
     padding: 0px 20px;
     position: fixed;
     width: 100%;
+    z-index: 100;
+
+    // TODO blur and darken the background when scrolling down
+    // &_active {
     // backdrop-filter: blur(3.5px);
     // -webkit-backdrop-filter: blur(3.5px);
-    z-index: 100;
+    // background-color: rgba(27, 27, 27, 0.699);
+    // }
 
     &__container {
         height: 68px;
@@ -13,9 +18,16 @@
         justify-content: flex-end;
     }
 
-    &__theme-switcher {
-        background: url(src/img/icons/sun.webp) center center / 60% no-repeat;
+    &__buttons {
+        display: flex;
+        gap: 10px;
+    }
+
+    &__button {
         background-color: $elements-bg-dark;
+        background-position: center center;
+        background-size: 60%;
+        background-repeat: no-repeat;
         border-radius: 10px;
         width: 34px;
         height: 34px;
@@ -25,5 +37,20 @@
         &:hover {
             background-color: lighten($elements-bg-dark, 10%);
         }
+    }
+
+    &__up {
+        background-image: url(/src/img/icons/up.webp);
+        visibility: hidden;
+        opacity: 0;
+
+        &_active {
+            visibility: visible;
+            opacity: 1;
+        }
+    }
+
+    &__switcher {
+        background-image: url(/src/img/icons/sun.webp);
     }
 }
