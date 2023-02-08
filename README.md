@@ -12,11 +12,8 @@ My first attempt at creating my own portfolio which consists of
 
 ## Preview
 
-<details> 
-  <summary>Click to reveal.</summary>
-   ![App Screenshot](https://i.imgur.com/KdvpmNo.png)
-   ![App Screenshot](https://i.imgur.com/meBGBbu.png)
-</details>
+![App Screenshot](https://i.imgur.com/KdvpmNo.png)
+![App Screenshot](https://i.imgur.com/meBGBbu.png)
 
 ## How to use
 
