@@ -12,12 +12,12 @@ My first attempt at creating my own portfolio which consists of
 
 ## ToDo
 
-[x] ~~switching light and dark theme 2023-07-02~~
-[ ] improved form submission (currently, forms are processed through netlify)
-[ ] a couple of animations
-[ ] copying Discord tag to clipboard when clicking on its link
-[ ] more information
-[ ] if the project grows, perhaps migrating to some framework in the future if necessary
+- [x] ~~switching light and dark theme 2023-07-02~~
+- [ ] improved form submission (currently, forms are processed through netlify)
+- [ ] a couple of animations
+- [ ] copying Discord tag to clipboard when clicking on its link
+- [ ] more information
+- [ ] if the project grows, perhaps migrating to some framework in the future if necessary
 
 ## Preview
 
