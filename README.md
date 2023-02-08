@@ -12,8 +12,7 @@ My first attempt at creating my own portfolio which consists of
 
 ## Preview
 
-![App Screenshot](https://i.imgur.com/KdvpmNo.png)
-![App Screenshot](https://i.imgur.com/meBGBbu.png)
+https://liverise.netlify.app/
 
 ## How to use
 
