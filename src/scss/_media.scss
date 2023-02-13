@@ -19,6 +19,14 @@
 }
 
 @media (max-width: 769px) {
+    .header {
+        bottom: 0;
+
+        &__container {
+            height: 50px;
+        }
+    }
+
     .section-title {
         font-size: $title-size - 10px;
     }
@@ -43,6 +51,8 @@
     }
 
     .footer {
+        padding-bottom: 87px;
+
         &__text {
             font-size: $text-size - 4px;
         }
@@ -61,7 +71,7 @@
 
 @media (max-width: 376px) {
     .section-title {
-        font-size: $title-size - 16px;
+        font-size: $title-size - 19px;
     }
 
     .footer {
