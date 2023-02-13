@@ -2,7 +2,6 @@ export default function handler() {
     const upButton = document.getElementById('upButton');
 
     document.addEventListener('scroll', (e) => {
-        console.log(window.scrollY);
         if (window.scrollY >= 5 ) {
             header.classList.add('header_active')
         } else {
