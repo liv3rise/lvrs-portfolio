@@ -1,7 +1,7 @@
 import '../scss/styles.scss';
 
 import themeHandler from './themeHandler';
-import upBtnHandler from './upBtnHandler';
+import scrollHandler from './scrollHandler';
 
 themeHandler();
-upBtnHandler();
+scrollHandler();

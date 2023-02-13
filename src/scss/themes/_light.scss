@@ -16,6 +16,10 @@
     }
 
     .header {
+        &_active {
+            background-color: rgba(darken($bg-secondary-light, 10%), 0.5);
+        }
+
         &__button {
             background-color: $elements-bg-light;
 

@@ -3,16 +3,16 @@
     position: fixed;
     width: 100%;
     z-index: 100;
+    transition: 0.3s;
 
-    // TODO blur and darken the background when scrolling down
-    // &_active {
-    // backdrop-filter: blur(3.5px);
-    // -webkit-backdrop-filter: blur(3.5px);
-    // background-color: rgba(27, 27, 27, 0.699);
-    // }
+    &_active {
+        backdrop-filter: blur(4.5px);
+        -webkit-backdrop-filter: blur(4.5px);
+        background-color: rgba(lighten($bg-secondary-dark, 10%), 0.5)
+    }
 
     &__container {
-        height: 68px;
+        height: 55px;
         display: flex;
         align-items: center;
         justify-content: flex-end;
@@ -29,8 +29,8 @@
         background-size: 60%;
         background-repeat: no-repeat;
         border-radius: 10px;
-        width: 34px;
-        height: 34px;
+        width: 30px;
+        height: 30px;
         cursor: pointer;
         transition: 0.3s;
 
