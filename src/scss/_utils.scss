@@ -4,25 +4,13 @@
 }
 
 .tooltip {
-    position: relative;
-
-    &::after {
-        content: attr(data-tooltip);
-        position: absolute;
-        white-space: nowrap;
-        top: -50px;
-        left: 50%;
-        transform: translateX(-50%);
-        padding: 10px;
-        color: $text-primary-dark;
-        background-color: lighten(rgba($elements-bg-dark, 0.3), 10%);
-        backdrop-filter: blur(4.5px);
-        -webkit-backdrop-filter: blur(4.5px);
-        border-radius: 10px;
-    }
-
-    &_bottom::after {
-        top: auto;
-        bottom: -50px;
-    }
+    position: absolute;
+    visibility: hidden;
+    white-space: nowrap;
+    padding: 10px;
+    color: $text-primary-dark;
+    background-color: lighten(rgba($elements-bg-dark, 0.3), 10%);
+    backdrop-filter: blur(4.5px);
+    -webkit-backdrop-filter: blur(4.5px);
+    border-radius: 10px;
 }
