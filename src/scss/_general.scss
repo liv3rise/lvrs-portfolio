@@ -25,3 +25,14 @@ body {
 ::-webkit-scrollbar-thumb:hover {
     background: lighten($elements-bg-dark, 15%);
 }
+
+.tippy-box {
+    padding: 10px;
+    font-size: 16px;
+    backdrop-filter: blur(4.5px);
+    -webkit-backdrop-filter: blur(4.5px);
+    border-radius: 10px;
+    text-align: center;
+    color: $text-primary-dark;
+    background-color: lighten(rgba($elements-bg-dark, 0.3), 10%);
+}

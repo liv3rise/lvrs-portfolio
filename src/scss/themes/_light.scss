@@ -15,6 +15,11 @@
         background: darken($elements-bg-light, 15%);
     }
 
+    .tippy-box {
+        color: $text-primary-light;
+        background-color: lighten(rgba($elements-bg-light, 0.5), 15%);
+    }
+
     .header {
         &_active {
             background-color: rgba(darken($bg-secondary-light, 10%), 0.5);

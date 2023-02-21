@@ -1,8 +1,5 @@
-import { tippyInstances } from "./tooltipHandler";
-
 export default function handler() {
     const html = document.documentElement;
-
     const storedThemeValue = localStorage.getItem('lightTheme');
 
     if (storedThemeValue === 'true') {
@@ -17,11 +14,9 @@ export default function handler() {
         if (lightTheme) {
             html.classList.remove("theme-light");
             localStorage.setItem('lightTheme', lightTheme);
-            tippyInstances.forEach((instance) => instance.setProps({theme: 'dark'}))
         } else {
             html.classList.add("theme-light");
             localStorage.setItem('lightTheme', lightTheme);
-            tippyInstances.forEach((instance) => instance.setProps({theme: 'light'}))
         }
     }
 
