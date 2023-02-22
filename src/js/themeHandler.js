@@ -1,3 +1,5 @@
+import { moveGlasses } from "./animHandler";
+
 export default function handler() {
     const html = document.documentElement;
     const storedThemeValue = localStorage.getItem('lightTheme');
@@ -10,13 +12,15 @@ export default function handler() {
         switchTheme(!osColorScheme());
     }
 
-    function switchTheme(lightTheme) {
+    function switchTheme(lightTheme, emojiAnimDuration = 0) {
         if (lightTheme) {
             html.classList.remove("theme-light");
             localStorage.setItem('lightTheme', lightTheme);
+            moveGlasses(-60, 0.2, 0.8, emojiAnimDuration);
         } else {
             html.classList.add("theme-light");
             localStorage.setItem('lightTheme', lightTheme);
+            moveGlasses(0, 1, 1.1, emojiAnimDuration);
         }
     }
 
@@ -32,7 +36,7 @@ export default function handler() {
         const themeSwitcher = document.getElementById("themeSwitcher");
 
         themeSwitcher.addEventListener("click", () => {
-            switchTheme(isLight());
+            switchTheme(isLight(), 0.6);
         });
 
         window.matchMedia('(prefers-color-scheme: light)').addEventListener('change', e => {

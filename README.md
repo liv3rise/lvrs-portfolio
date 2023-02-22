@@ -10,7 +10,7 @@ My first attempt at creating my own portfolio which consists of
 
 *The work is still in progress, this is not the final version.*
 
-## ToDo
+## 🗒️ ToDo
 
 - [x] ~~switching light and dark theme 2023-07-02~~
 - [x] ~~copying Discord tag to clipboard when clicking on its link 2023-21-02~~
@@ -19,13 +19,13 @@ My first attempt at creating my own portfolio which consists of
 - [ ] more information
 - [ ] if the project grows, perhaps migrating to some framework in the future if necessary
 
-## Preview
+## 🌌 Preview
 
 https://liverise.netlify.app/
 
-## How to use
+## ❓ How to use
 
-Preparation
+⚙️ Preparation
 
 ```bash
 git clone https://github.com/liv3rise/lvrs-portfolio
@@ -33,25 +33,28 @@ cd lvrs-portfolio
 npm i
 ```
 
-Starting a dev server for live development
+🚀 Starting a dev server for live development
 
 ```bash
 npm run dev
 ```
 
-Building
+🔨 Building
 
 ```bash
 npm run build
 ```
 
-## Tools Used
+## ⚒️ Tools Used
 
-- Vanilla HTML and JS
-- SCSS
-- Vite
-- A bit of ❤️
+- 🏵️ Vanilla HTML and JS
+- 🎨 SCSS
+- ✨ Vite
+- 🎬 GSAP
+- 💭 Tippy.js
+- 📋 Clipboard.js
+- ❤️ A bit of Love
 
 
-## Can I use it?
+## 🤔 Can I use it?
 If you really want to, then you are free to modify and use this portfolio for yourself, that's what open source is for!
