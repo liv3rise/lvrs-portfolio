@@ -1,10 +1,15 @@
 import { gsap } from "gsap";
 
-export function moveGlasses(y, opacity, scale, duration) {
+export function moveGlasses(y, opacity, scale, duration, glassesScale = 1) {
+    gsap.set('#glasses', {
+        transformOrigin: '50% 50%'
+    })
+
     gsap.to('#glasses', {
         y,
         ease: 'bounce',
         duration,
+        scale: glassesScale,
     });
 
     gsap.to(['right-lens-h', 'left-lens-h'], {

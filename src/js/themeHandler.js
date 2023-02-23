@@ -16,7 +16,7 @@ export default function handler() {
         if (lightTheme) {
             html.classList.remove("theme-light");
             localStorage.setItem('lightTheme', lightTheme);
-            moveGlasses(-60, 0.2, 0.8, emojiAnimDuration);
+            moveGlasses(-60, 0.2, 0.8, emojiAnimDuration, 0.75);
         } else {
             html.classList.add("theme-light");
             localStorage.setItem('lightTheme', lightTheme);
