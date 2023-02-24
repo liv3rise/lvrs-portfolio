@@ -8,7 +8,12 @@
     &_active {
         backdrop-filter: blur(4.5px);
         -webkit-backdrop-filter: blur(4.5px);
-        background-color: rgba(lighten($bg-secondary-dark, 10%), 0.5)
+        background-color: rgba(lighten($bg-secondary-dark, 10%), 0.5);
+
+        .header__button {
+            transition-property: background-color, background-image, opacity, visibility;
+            transition-duration: 0.3s;
+        }
     }
 
     &__container {
@@ -32,7 +37,8 @@
         width: 30px;
         height: 30px;
         cursor: pointer;
-        transition: 0.3s;
+        transition-property: background-color, background-image;
+        transition-duration: 0.3s;
 
         &:hover {
             background-color: lighten($elements-bg-dark, 10%);
@@ -41,12 +47,12 @@
 
     &__up {
         background-image: url(/src/img/icons/up.webp);
-        visibility: hidden;
         opacity: 0;
+        visibility: hidden;
 
         &_active {
-            visibility: visible;
             opacity: 1;
+            visibility: visible;
         }
     }
 

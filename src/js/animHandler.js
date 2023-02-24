@@ -12,7 +12,7 @@ export function moveGlasses(y, opacity, scale, duration, glassesScale = 1) {
         scale: glassesScale,
     });
 
-    gsap.to(['right-lens-h', 'left-lens-h'], {
+    gsap.to(['#right-lens-h', '#left-lens-h'], {
         opacity,
         duration: duration - 0.2,
         scale
