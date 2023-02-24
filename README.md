@@ -14,9 +14,10 @@ My first attempt at creating my own portfolio which consists of
 
 - [x] ~~switching light and dark theme 2023-07-02~~
 - [x] ~~copying Discord tag to clipboard when clicking on its link 2023-21-02~~
+- [x] ~~a couple of animations 2023-24-02~~
+- [ ] more animations!
 - [ ] improved form submission (currently, forms are processed through netlify)
 - [ ] form validation
-- [ ] a couple of animations
 - [ ] more information
 - [ ] if the project grows, perhaps migrating to some framework in the future if necessary
 

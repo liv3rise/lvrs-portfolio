@@ -3,9 +3,43 @@ import { gsap } from "gsap";
 const html = document.documentElement;
 
 export default function handler() {
+    rollEmoji();
+    slideMainContent();
+
     if (!html.classList.contains('theme-light')) {
-        moveGlasses(-30);
+        moveGlasses(-60, 0.2, 0.8, 0, 0.75);
     }
+
+    const observer = new MutationObserver((mutationsList) => {
+        for (let mutation of mutationsList) {
+            if (mutation.type === 'attributes' && mutation.attributeName === 'class') {
+                if (html.classList.contains('theme-light')) {
+                    moveGlasses(0, 1, 1.1, 0.6);
+                } else {
+                    moveGlasses(-60, 0.2, 0.8, 0.6, 0.75);
+                }
+            }
+        }
+    });
+
+    observer.observe(html, { attributes: true });
+}
+
+export function rollEmoji() {
+    gsap.to('#emojiWithGlasses', {
+        duration: 3.5,
+        ease: 'bounce',
+        left: 0,
+        rotate: '-360deg'
+    })
+}
+
+export function slideMainContent() {
+    gsap.to('#mainContent', {
+        left: 0,
+        opacity: 1,
+        duration: 1
+    })
 }
 
 export function moveGlasses(y, opacity, scale, duration, glassesScale = 1) {
