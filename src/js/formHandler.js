@@ -1,4 +1,4 @@
-import { openMailbox } from "./animHandler";
+import { openMailbox, showFinalMessage } from "./animHandler";
 
 export default function handler() {
     const handleSubmit = (event) => {
@@ -14,6 +14,7 @@ export default function handler() {
         })
             .then(() => {
                 openMailbox();
+                showFinalMessage();
             })
             .catch((error) => alert(error));
     };

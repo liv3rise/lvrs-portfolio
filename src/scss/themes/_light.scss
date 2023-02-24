@@ -94,6 +94,12 @@
             }
         }
 
+        &__final-content {
+            img {
+                filter: invert(75%);
+            }
+        }
+
         &__input[type="text"],
         &__textarea {
             background-color: $elements-bg-light;

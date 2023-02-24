@@ -30,19 +30,33 @@ export function openMailbox() {
 
     gsap.fromTo('#envelope', { x: 100 }, {
         x: 0,
-        delay: 0.5,
+        delay: 1.4,
         duration: 1
     })
 
     gsap.to('#flag', {
         rotate: -90,
         duration: 1,
-        delay: 1.3
+        delay: 1.8
     })
 
     gsap.to('#lid', {
         scale: 0.1,
         opacity: 0,
-        duration: 0.3,
+        duration: 0.4,
     });
+}
+
+export function showFinalMessage() {
+    gsap.to('#formContainer', {
+        ease: 'slow',
+        left: '-1000px',
+        duration: 1,
+    })
+
+    gsap.to('#finalContainer', {
+        ease: 'slow',
+        right: 0,
+        duration: 1
+    })
 }

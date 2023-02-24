@@ -18,7 +18,36 @@
         display: flex;
         flex-direction: column;
         gap: 30px;
-        max-width: 100%;
+    }
+
+    &__form-wrapper {
+        position: relative;
+        overflow: hidden;
+    }
+
+    &__form-content {
+        display: flex;
+        gap: 30px;
+        flex-direction: column;
+        width: 100%;
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+
+    &__final-content {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 30px;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        right: -1000px;
+
+        img {
+            width: 30%;
+        }
     }
 
     &__links {
