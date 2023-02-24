@@ -47,7 +47,8 @@
         border: 5px solid $accent-color-dark;
         color: darken($text-primary-dark, 10%);
         text-decoration: none;
-        transition: 0.3s;
+        transition-duration: 0.3s;
+        transition-property: background-color, border-color;
         cursor: pointer;
 
         &:hover {

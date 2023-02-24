@@ -64,7 +64,7 @@
         height: 59px;
         background-color: $elements-bg-dark;
         border-radius: 20px;
-        transition: 0.3s;
+        transition: 0.3s background-color;
 
         &:hover {
             background-color: lighten($elements-bg-dark, 8%);
@@ -79,6 +79,7 @@
         display: flex;
         flex-direction: column;
         gap: 30px;
+        padding: 0 2px;
     }
 
     &__input[type="text"],
@@ -89,7 +90,7 @@
         border: none;
         font-size: 20px;
         padding: 16px 30px;
-        transition: 0.3s;
+        transition: 0.3s box-shadow;
 
         &::placeholder {
             color: lighten($elements-bg-dark, 15%);
@@ -117,7 +118,7 @@
         border-radius: 30px;
         border: none;
         cursor: pointer;
-        transition: 0.3s;
+        transition: 0.3s background-color;
 
         &:hover {
             background-color: darken($accent-color-dark, 3%);

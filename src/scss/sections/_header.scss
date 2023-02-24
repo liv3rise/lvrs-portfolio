@@ -3,17 +3,12 @@
     position: fixed;
     width: 100%;
     z-index: 100;
-    transition: 0.3s;
+    transition: 0.3s background-color;
 
     &_active {
         backdrop-filter: blur(4.5px);
         -webkit-backdrop-filter: blur(4.5px);
         background-color: rgba(lighten($bg-secondary-dark, 10%), 0.5);
-
-        .header__button {
-            transition-property: background-color, background-image, opacity, visibility;
-            transition-duration: 0.3s;
-        }
     }
 
     &__container {
@@ -47,11 +42,9 @@
 
     &__up {
         background-image: url(/src/img/icons/up.webp);
-        opacity: 0;
         visibility: hidden;
 
         &_active {
-            opacity: 1;
             visibility: visible;
         }
     }
