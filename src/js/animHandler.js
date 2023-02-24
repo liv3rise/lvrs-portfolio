@@ -1,5 +1,13 @@
 import { gsap } from "gsap";
 
+const html = document.documentElement;
+
+export default function handler() {
+    if (!html.classList.contains('theme-light')) {
+        moveGlasses(-30);
+    }
+}
+
 export function moveGlasses(y, opacity, scale, duration, glassesScale = 1) {
     gsap.set('#glasses', {
         transformOrigin: '50% 50%'
