@@ -1,17 +1,27 @@
+import { gsap, ScrollTrigger } from "gsap/all";
+
 export default function handler() {
     const upButton = document.getElementById('upButton');
 
-    document.addEventListener('scroll', () => {
-        if (window.scrollY >= 5 ) {
-            header.classList.add('header_active');
-        } else {
-            header.classList.remove('header_active');
-        }
-
-        if (window.scrollY >= 1000) {
+    ScrollTrigger.create({
+        trigger: '.works',
+        start: 'top top',
+        onEnter: () => {
             upButton.classList.add('header__up_active');
-        } else {
+        },
+        onLeaveBack: () => {
             upButton.classList.remove('header__up_active');
         }
-    })
+    });
+
+    ScrollTrigger.create({
+        trigger: '.main',
+        start: 'top -10%',
+        onEnter: () => {
+            header.classList.add('header_active');
+        },
+        onLeaveBack: () => {
+            header.classList.remove('header_active');
+        }
+    });
 }

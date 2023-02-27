@@ -1,10 +1,14 @@
-import { gsap } from "gsap";
+import { gsap, ScrollTrigger } from "gsap/all";
+
+gsap.registerPlugin(ScrollTrigger);
 
 const html = document.documentElement;
 
 export default function handler() {
     rollEmoji();
     slideMainContent();
+    showWorks();
+    showContacts();
 
     if (!html.classList.contains('theme-light')) {
         moveGlasses(-60, 0.2, 0.8, 0, 0.75);
@@ -51,7 +55,7 @@ export function moveGlasses(y, opacity, scale, duration, glassesScale = 1) {
         y,
         ease: 'bounce',
         duration,
-        scale: glassesScale,
+        scale: glassesScale
     });
 
     gsap.to(['#right-lens-h', '#left-lens-h'], {
@@ -61,6 +65,34 @@ export function moveGlasses(y, opacity, scale, duration, glassesScale = 1) {
     });
 }
 
+function showWorks() {
+    gsap.from('.works__item', {
+        scrollTrigger: {
+            trigger: '.works__items',
+            start: '20% bottom'
+        },
+        y: 200,
+        opacity: 0,
+        stagger: 0.2,
+        duration: 1,
+        ease: 'smooth'
+    });
+}
+
+function showContacts() {
+    gsap.from(['.contact__emoji', '.contact__text', '.contact__link', '.contact__form'], {
+        scrollTrigger: {
+            trigger: '.contact__emoji',
+            start: '30% bottom',
+        },
+        opacity: 0,
+        duration: 0.8,
+        ease: 'smooth',
+        scale: 0,
+        stagger: 0.2,
+    })
+}
+
 export function openMailbox() {
     gsap.set('#lid', {
         transformOrigin: 'center'
@@ -68,19 +100,19 @@ export function openMailbox() {
 
     gsap.set(['#flag'], {
         transformOrigin: '25px 25px'
-    })
+    });
 
     gsap.fromTo('#envelope', { x: 100 }, {
         x: 0,
         delay: 1.4,
         duration: 1
-    })
+    });
 
     gsap.to('#flag', {
         rotate: -90,
         duration: 1,
         delay: 1.8
-    })
+    });
 
     gsap.to('#lid', {
         scale: 0.1,
@@ -94,11 +126,11 @@ export function showFinalMessage() {
         ease: 'slow',
         left: '-1000px',
         duration: 1,
-    })
+    });
 
     gsap.to('#finalContainer', {
         ease: 'slow',
         right: 0,
         duration: 1
-    })
+    });
 }
