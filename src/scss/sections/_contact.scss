@@ -79,7 +79,30 @@
         display: flex;
         flex-direction: column;
         gap: 30px;
-        padding: 0 2px;
+        padding: 0 4px;
+    }
+
+    &__input-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    &__input-error {
+        display: none;
+        color: $error-color-dark;
+        padding-left: 10px;
+    }
+
+    &__show-error {
+        .contact__input-error {
+            display: inline;
+        }
+
+        .contact__input[type="text"],
+        .contact__textarea { 
+            box-shadow: 0 0 2px 2px $error-color-dark;
+        }
     }
 
     &__input[type="text"],
